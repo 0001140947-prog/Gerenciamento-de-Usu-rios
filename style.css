@@ -1,0 +1,129 @@
+:root {
+    --bg: #0f172a;
+    --card: #111827;
+    --primary: #3b82f6;
+    --text: #e5e7eb;
+    --muted: #9ca3af;
+    --border: #1f2933;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #020617, #020617);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text);
+}
+
+.container {
+    width: 100%;
+    max-width: 520px;
+    background-color: var(--card);
+    padding: 32px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    box-shadow: 0 20px 40px rgba(0,0,0,.4);
+}
+
+h1 {
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+p {
+    text-align: center;
+    color: var(--muted);
+    margin-bottom: 24px;
+}
+
+nav a {
+    display: block;
+    padding: 12px;
+    margin-bottom: 12px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #020617;
+    border: 1px solid var(--border);
+    color: var(--text);
+    text-decoration: none;
+    transition: all .2s ease;
+}
+
+nav a:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+label {
+    font-size: 14px;
+    color: var(--muted);
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    background-color: #020617;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text);
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: var(--primary);
+    border: none;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    filter: brightness(1.1);
+}
+
+.erro {
+    background-color: rgba(239, 68, 68, .15);
+    border: 1px solid rgba(239, 68, 68, .4);
+    color: #fca5a5;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.user {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    margin-bottom: 10px;
+    background-color: #020617;
+}
+
+.footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footer a {
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 14px;
+}

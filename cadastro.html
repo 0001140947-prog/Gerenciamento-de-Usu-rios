@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+    <h1>Cadastrar Usuário</h1>
+
+    {% if erro %}
+        <div class="erro">{{ erro }}</div>
+    {% endif %}
+
+    <form method="POST">
+        <label>Nome</label>
+        <input type="text" name="nome">
+
+        <label>Email</label>
+        <input type="email" name="email">
+
+        <button type="submit">Cadastrar</button>
+    </form>
+
+    <div class="footer">
+        <a href="{{ url_for('landing_page') }}">Voltar</a>
+    </div>
+</div>
+</body>
+</html>
